@@ -8,10 +8,10 @@ public class Main {
 
         Supermercado mercado = new Supermercado();
 
-        System.out.println("=== 1. LISTAGEM INICIAL ===");
+        System.out.println("1. LISTAGEM INICIAL");
         mercado.listarProdutos();
 
-        System.out.println("\n=== 2. TOTAL DA COMPRA ===");
+        System.out.println("2. TOTAL DA COMPRA");
         double totalCompra = mercado.calcularTotalComDesconto();
 
         System.out.printf(
@@ -19,19 +19,19 @@ public class Main {
             totalCompra
         );
 
-        System.out.println("\n=== 3. MAIOR ECONOMIA ===");
+        System.out.println("3. MAIOR ECONOMIA");
         mercado.maiorEconomia();
 
-        System.out.println("\n=== 4. COMPRANDO UM PRODUTO ===");
+        System.out.println("4. COMPRANDO UM PRODUTO");
         mercado.comprarProduto(2);
 
-        System.out.println("\n--- Listagem após a compra ---");
+        System.out.println("Listagem após a compra");
         mercado.listarProdutos();
 
-        System.out.println("\n=== 5. REPOSIÇÃO DE UM PRODUTO ===");
+        System.out.println("5. REPOSIÇÃO DE UM PRODUTO");
         mercado.reporProduto(2, "Azeite", 20.0, 0.10);
 
-        System.out.println("\n--- Listagem final após reposição ---");
+        System.out.println("Listagem final após reposição");
         mercado.listarProdutos();
     }
 }
